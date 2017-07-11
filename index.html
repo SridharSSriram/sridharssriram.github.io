@@ -19,8 +19,9 @@
 
 	});
 	function onSuccess(stream){
-		var video = document.querySelector('#videoElement');
-		video.src = window.URL.createObjectURL(stream);
+		var vid = document.getElementById('videoElement');
+		vid.setAttribute('src',window.URL.createObjectURL(stream))
+		//vid.src = window.URL.createObjectURL(stream);
 		
 	}
 	function onFail(){
