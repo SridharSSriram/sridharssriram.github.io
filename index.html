@@ -14,7 +14,7 @@
 	$(document).ready(function(){
 		navigator.getUserMedia({
 			video:true
-		},onSuccess);
+		},onSuccess,onFail);
 
 	});
 	function onSuccess(stream){
@@ -23,6 +23,9 @@
 		video.onloadedmetadata = function(e){
 			alert("this is opened");
 		};
+	}
+	function onFail(){
+		alert("sorry, you've failed");
 	}
 </script>
 </html>
