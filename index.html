@@ -59,6 +59,12 @@
       var drawSegments = [[]];
       var segment = 0;
       var tracker = new tracking.ColorTracker(['magenta', 'yellow']);
+		tracking.ColorTracker.registerColor('green', function(r, g, b) {
+			if (r < 255 && g > 165 && b < 43) {
+			return true;
+			}
+			return false;
+		});
       tracking.track('#video', tracker, { camera: true });
       tracker.on('track', function(event) {
         if (event.data.length === 0 && drawSegments[segment].length > 0) {
