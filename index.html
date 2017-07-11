@@ -5,18 +5,17 @@
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-<video is = "video-color-tracking" target = "orange" camera = "true" ontrack = "onResult()">
+<video>
 </video>
 </body>
 <script type="text/javascript">
 	console.log("uo");
-	function onResult(){
+	$(document).ready(function(){
 		navigator.getUserMedia({
 			video:true
 		},onSuccess,onFail);
 
-		alert("oh snap it worked");
-	}
+	});
 	function onSuccess(stream){
 		var video = document.querySelector('video');
 		video.src = URL.createObjectURL(stream);
