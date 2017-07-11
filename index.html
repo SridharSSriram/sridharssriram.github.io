@@ -58,7 +58,7 @@
       var context = canvas.getContext('2d');
       var drawSegments = [[]];
       var segment = 0;
-      var tracker = new tracking.ColorTracker(['magenta', 'cyan']);
+      var tracker = new tracking.ColorTracker(['magenta', 'yellow']);
       tracking.track('#video', tracker, { camera: true });
       tracker.on('track', function(event) {
         if (event.data.length === 0 && drawSegments[segment].length > 0) {
@@ -68,11 +68,8 @@
           }
         }
         event.data.forEach(function(rect) {
-          if (rect.color === 'cyan') {
+          if (rect.color === 'yellow') {
             draw(rect);
-          }
-          else if (rect.color === 'magenta') {
-            erase(rect);
           }
         });
       });
