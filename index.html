@@ -5,7 +5,8 @@
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-<video>
+<video autoplay="true" id="videoElement">
+ 
 </video>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,11 +19,9 @@
 
 	});
 	function onSuccess(stream){
-		var video = document.querySelector('video');
+		var video = document.querySelector('#videoElement');
 		video.src = URL.createObjectURL(stream);
-		video.onloadedmetadata = function(e){
-			alert("this is opened");
-		};
+		
 	}
 	function onFail(){
 		alert("sorry, you've failed");
