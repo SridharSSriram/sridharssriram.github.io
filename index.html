@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <meta charset="utf-8">
+  <title>tracking.js - first tracking</title>
+  <script src="tracking/build/tracking-min.js"></script>
 </head>
-
-<body style="margin : 0px; overflow: hidden;">
-<video autoplay="true" id="videoElement">
- 
-</video>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script >
-	console.log("uo");
-	$(document).ready(function(){
-		navigator.getUserMedia({
-			video:true
-		},onSuccess,onFail);
-
-	});
-	function onSuccess(stream){
-		var vid = document.getElementById('videoElement');
-		vid.setAttribute('src',window.URL.createObjectURL(stream))
-		//vid.src = window.URL.createObjectURL(stream);
-		
-	}
-	function onFail(){
-		alert("sorry, you've failed");
-	}
+<body>
+<video id="myVideo" width="400" height="300" preload autoplay loop muted></video>
+<script>
+var colors = new tracking.ColorTracker(['magenta', 'cyan', 'yellow']);
+colors.on('track', function(event) {
+  if (event.data.length === 0) {
+    // No colors were detected in this frame.
+  } else {
+    event.data.forEach(function(rect) {
+      console.log(rect.x, rect.y, rect.height, rect.width, rect.color);
+      alert(rect.x, rect.y, rect.height, rect.width, rect.color);
+    });
+  }
+});
+window.onload = function() {
+  // note here that 'camera' is set to true, I believe this tells tracking.js to use
+  // the webcam.
+  tracking.track('#myVideo', colors, {camera: true});  
+}
 </script>
+</body>
 </html>
