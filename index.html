@@ -11,7 +11,18 @@
 <script type="text/javascript">
 	console.log("uo");
 	function onResult(){
+		navigator.getUserMedia({
+			video:true
+		},onSuccess,onFail);
+
 		alert("oh snap it worked");
+	}
+	function onSuccess(stream){
+		var video = document.querySelector('video');
+		video.src = URL.createObjectURL(stream);
+		video.onloadedmetadata = function(e){
+			alert("this is opened");
+		};
 	}
 </script>
 </html>
