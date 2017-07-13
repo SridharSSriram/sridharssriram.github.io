@@ -1,13 +1,26 @@
 <!-- Augmented Reality on the Web in 10 lines of html! https://github.com/jeromeetienne/ar.js --> 
-<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
-<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
-<body style='margin : 0px; overflow: hidden;'>
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+  <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
+  <title></title>
+</head>
+<body>
   <a-scene>
-  <a-assets>
-    <a-asset-item id="tree-obj" src="things.obj"></a-asset-item>
-  </a-assets>
-  <a-entity obj-model="obj: #tree-obj"></a-entity>
+    <a-assets>
+      <a-asset-item id="tree-obj" src="things.obj"></a-asset-item>
+    </a-assets>
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
+
 </body>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var link = ("https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg/");
+    alert("before starting, please make sure you have a hiro marker.  These markers can be found here: "+link +" enjoy!")
+  })
+</script>
+</html>
+
