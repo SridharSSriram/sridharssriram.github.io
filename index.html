@@ -1,31 +1,28 @@
+<!-- Augmented Reality on the Web in 10 lines of html! https://github.com/jeromeetienne/ar.js --> 
 <!DOCTYPE html>
 <html>
 <head>
-  <title> things and tracking</title>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+  <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
+  <title></title>
 </head>
 <body>
-  <video autoplay="true" id="videoElement"></video>
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="object" src="torusKnot.obj"></a-asset-item>
+    </a-assets>
+    <a-obj-model src = "#object"></a-obj-model> 
+  </a-scene>
+
 </body>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script>
+<script type="text/javascript">
   $(document).ready(function(){
-    if(navigator.getUserMedia){
-      navigator.getUserMedia({
-      video:true
-    },onSuccess,onFail);
-    }else{
-      alert("NOPE");
-    }
+    var strang = "Hiro Marker";
+    var link = ("<p>fksbdkjfsdf: " + strang.link("https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg/") + "</p>");
+    alert(link);  
   });
-  function onSuccess(stream){
-    var vid = document.getElementById('videoElement');
-    vid.setAttribute('src',window.URL.createObjectURL(stream));
-    alert(vid.src);
-    // vid.src = window.URL.createObjectURL(stream);
-  };
-  function onFail(){
-    return;
-  };
 </script>
 </html>
 
