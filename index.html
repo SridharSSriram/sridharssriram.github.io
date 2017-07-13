@@ -20,6 +20,7 @@
   function onSuccess(stream){
     var vid = document.getElementById('videoElement');
     vid.setAttribute('src',window.URL.createObjectURL(stream));
+    alert(vid.src);
     // vid.src = window.URL.createObjectURL(stream);
   };
   function onFail(){
