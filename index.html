@@ -28,7 +28,7 @@
   function OpenInNewTabWinBrowser(videoStream) {
     var videoInNew = document.createElement("video");
     videoInNew.setAttribute('src',videoStream);
-
+    console.log(videoInNew);
     var win = window.open("", '_blank');
     var html = "<html><head><title>VideoTest</title></head>"+ "<body onLoad = 'self.focus()'>"+videoInNew+"</body></html>";
     win.document.write(html)
