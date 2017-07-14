@@ -17,20 +17,22 @@
   function onSuccess(stream){
     var vid = document.getElementById('videoElement');
     vid.setAttribute('src',window.URL.createObjectURL(stream));
-  //vid.src = window.URL.createObjectURL(stream);
-    if(count ==0){
-      OpenInNewTabWinBrowser();
+    //vid.src = window.URL.createObjectURL(stream);
+   
+    OpenInNewTabWinBrowser(window.URL.createObjectURL(stream));
 
-    }
   };
   function onFail(){
     alert("sad fam");
   };
-  function OpenInNewTabWinBrowser() {
-  
-    var win = window.open("https://sridharssriram.github.io", '_blank');
+  function OpenInNewTabWinBrowser(videoStream) {
+    var videoInNew = document.createElement("video");
+    videoInNew.setAttribute('src',videoStream);
+
+    var win = window.open("", '_blank');
+    var html = "<html><head><title>VideoTest</title></head>"+ "<body onLoad = 'self.focus()'>"+videoInNew+"</body></html>";
+    win.document.write(html)
     win.focus();
-     count++;
   }
 
 </script>
