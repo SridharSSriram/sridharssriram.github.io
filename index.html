@@ -8,6 +8,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
+  var count = 0;
   $(document).ready(function(){
     navigator.getUserMedia({
       video:true
@@ -18,11 +19,15 @@
     vid.setAttribute('src',window.URL.createObjectURL(stream));
   //vid.src = window.URL.createObjectURL(stream);
     OpenInNewTabWinBrowser();
+    count++;
   };
   function onFail(){
     alert("sad fam");
   };
   function OpenInNewTabWinBrowser() {
+    if(count != 0){
+      return;
+    }
     var win = window.open("https://sridharssriram.github.io", '_blank');
     win.focus();
   }
