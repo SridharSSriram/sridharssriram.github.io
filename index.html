@@ -17,10 +17,16 @@
     var vid = document.getElementById('videoElement');
     vid.setAttribute('src',window.URL.createObjectURL(stream));
   //vid.src = window.URL.createObjectURL(stream);
+    OpenInNewTabWinBrowser();
   };
   function onFail(){
     alert("sad fam");
   };
+  function OpenInNewTabWinBrowser() {
+    var win = window.open("https://sridharssriram.github.io", '_blank');
+    win.focus();
+  }
+
 </script>
 <style type="text/css">
   video{
