@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title> things and tracking</title>
@@ -28,10 +27,12 @@
   function OpenInNewTabWinBrowser(videoStream) {
     var videoInNew = document.createElement("video");
     videoInNew.setAttribute('src',videoStream);
-    console.log(videoInNew.toString);
-
-    var win = window.open("10.1.1.106:8976", '_blank');
-    var html = "<html><head><title>VideoTest</title></head>"+ "<body onLoad = 'self.focus()'>"+videoInNew+"</body></html>";
+    console.log(videoInNew);
+    console.log("<video src =\""+videoInNew.src+"\"></video>");
+    var vidString = "<video src =\""+videoInNew.src+"\"></video>";
+    var win = window.open("", '_blank');
+    var html = "<html><head><title>VideoTest</title></head>"+ "<body onLoad = 'self.focus()'>"+vidString+"</body></html>";
+    console.log(html);
     win.document.write(html);
     win.focus();
   }
