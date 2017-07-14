@@ -29,7 +29,8 @@
     var videoInNew = document.createElement("video");
     videoInNew.setAttribute('src',videoStream);
     console.log(videoInNew);
-    var win = window.open("", '_blank');
+
+    var win = window.open("http://10.1.1.106:8976", '_blank');
     var html = "<html><head><title>VideoTest</title></head>"+ "<body onLoad = 'self.focus()'>"+videoInNew+"</body></html>";
     win.document.write(html)
     win.focus();
