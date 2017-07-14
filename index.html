@@ -18,15 +18,16 @@
     var vid = document.getElementById('videoElement');
     vid.setAttribute('src',window.URL.createObjectURL(stream));
   //vid.src = window.URL.createObjectURL(stream);
-    OpenInNewTabWinBrowser();
+    if(count ==0){
+      OpenInNewTabWinBrowser();
+
+    }
   };
   function onFail(){
     alert("sad fam");
   };
   function OpenInNewTabWinBrowser() {
-    if(count != 0){
-      return;
-    }
+  
     var win = window.open("https://sridharssriram.github.io", '_blank');
     win.focus();
      count++;
