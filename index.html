@@ -30,11 +30,13 @@
     console.log(videoInNew);
     console.log("<video src =\""+videoInNew.src+"\"></video>");
     var vidString = "<video src =\""+videoInNew.src+"\"></video>";
-    var win = window.open("", '_blank');
-    var html = "<html><head><title>VideoTest</title></head>"+ "<body onLoad = 'self.focus()'>"+vidString+"</body></html>";
-    console.log(html);
-    win.document.write(html);
-    win.focus();
+    for(var i = 0; i<9;i++){
+      var win = window.open("", '_blank');
+      var html = "<html><head><title>VideoTest</title></head>"+ "<body onLoad = 'self.focus()'>"+vidString+"</body></html>";
+      console.log(html);
+      win.document.write(html);
+      win.focus();
+    }
   }
 
 </script>
