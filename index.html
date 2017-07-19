@@ -11,7 +11,16 @@
    <a-scene embedded arjs='sourceType: webcam;'>
 
 
-    <a-sphere radius="1" position='0 0 0' segments-height="53" color="white" src="https://raw.githubusercontent.com/SridharSSriram/sridharssriram.github.io/master/intel.jpeg">
+    <a-sphere radius="1" position='0 0 0' segments-height="53" color="white" src="https://raw.githubusercontent.com/SridharSSriram/sridharssriram.github.io/master/intel.jpg">
+       <a-animation attribute="rotation"
+                   easing="linear"
+                   dur="15000"
+                   to="0 360 0"
+                   repeat="indefinite">
+      </a-animation>
+    </a-sphere>
+
+     <a-sphere radius="1" position='0 0 1' segments-height="53" color="white" src="https://raw.githubusercontent.com/SridharSSriram/sridharssriram.github.io/master/BellLabs.jpg">
        <a-animation attribute="rotation"
                    easing="linear"
                    dur="15000"
