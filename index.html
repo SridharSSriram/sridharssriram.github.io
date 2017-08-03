@@ -8,7 +8,7 @@
  -->  <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
 </head>
 <body style="margin : 0px; overflow: hidden;">
-   <a-scene >
+   <a-scene stats>
 <!-- 
 
     <a-sphere scale="0.5 0.5 0.5" radius="2" position="-3 -2 -1" segments-height="40" color="white" src="https://raw.githubusercontent.com/SridharSSriram/sridharssriram.github.io/master/intel.jpg">
@@ -42,7 +42,7 @@
   <a-assets>
     <a-asset-item id = "drone" src = "busterDrone/busterDrone.gltf"></a-asset-item>
   </a-assets>
-  <a-entity id = "drones" gltf-model = "#drone"></a-entity>
+  <a-entity gltf-model="#drone" position="10 -1 5" scale="3 3 3" rotation="" visible=""></a-entity>
    <!--  <a-marker-camera preset="hiro"></a-marker-camera> -->
 
   </a-scene>
