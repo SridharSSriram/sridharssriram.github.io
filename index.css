@@ -10,14 +10,17 @@
   #hello {
     grid-area: opt1;
     border: 2px solid red;
+    padding:0px;
   }
   #names {
     grid-area: opt2;
     border: 2px solid red;
+    padding:0px;
   }
   #causes {
     grid-area: opt3;
     border: 2px solid red;
+    padding:0px;
   }
  /* 
   .left {
