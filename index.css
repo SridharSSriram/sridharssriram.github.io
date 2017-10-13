@@ -39,7 +39,7 @@
       "opt1 opt2 opt3 opt4"
       "opt5 opt6 opt7 opt8";
   }*/
-  @media screen and (min-width: 1500px) {
+  @media screen and (min-width: 1400px) {
     body{
       display: grid;
       grid-gap: 10px;
