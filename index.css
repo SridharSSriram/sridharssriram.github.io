@@ -1,0 +1,82 @@
+@supports (display: grid) {
+  h1, h2{
+    font-family: 'Roboto', sans-serif;
+  }
+  /* title */
+
+  /* Monitors */
+  /* Inner Grid */
+  .text {
+    grid-area: text;
+  }
+
+  #hello {
+    grid-area: opt1;
+  }
+  #names {
+    grid-area: opt2;
+  }
+  #causes {
+    grid-area: opt3;
+  }
+ /* 
+  .left {
+    grid-area: left;
+  }
+  .right {
+    grid-area: right;
+  }*/
+  /*.left, .right {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3.5fr 3.5fr;
+    grid-template-areas:
+      "text text text text"
+      "opt1 opt2 opt3 opt4"
+      "opt5 opt6 opt7 opt8";
+  }*/
+  @media screen and (min-width: 1500px) {
+    body{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 3.5fr 3.5fr;
+      grid-template-areas:
+        "opt1 opt2 opt3";
+    }
+  }
+
+    /* Outer Grid mobile */
+
+  /* Outer Grid computer */
+  @media screen and (min-width: 1000px) {
+    body {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1.5fr 8fr 3.5fr 1.5fr auto;
+      grid-template-areas:
+        "opt1 opt2"
+        "opt3";
+       overflow: visible;
+    }
+
+  }
+
+
+  /* Outer Grid computer */
+  @media screen and (min-width: 500px) {
+    body {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 9fr 3fr 1fr auto;
+      grid-template-areas:
+        "opt1"
+        "opt2"
+        "opt3";
+       overflow: visible;
+    }
+  }
+}
