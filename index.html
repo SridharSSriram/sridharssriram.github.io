@@ -3,24 +3,24 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
+  <link rel="stylesheet" href="index.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="/jquery.typer.js/src/jquery.typer.js"></script>
 <body>
 
-  <h1>Hello, World!</h1>
-  <h2 data-typer-targets="Developer, Student Leader, Innovator, Community Mobilize, ">Welcome</h2>
-
-  <h2 data-typer-targets="abcdefgfedcba,afgfa">Welcome</h2>
-
+  <div id = "hello">
+    <h1>Hello, World!</h1>
+  </div>
+  <div id = "names">
+    <h2 data-typer-targets="Developer, Student Leader, Innovator, Community Mobilize, ">Welcome</h2>
+  </div>
+  <div id = "causes">
+    <h2 data-typer-targets="abcdefgfedcba,afgfa">Welcome</h2>
+  </div>
   <script>
     $(function () {
       $('[data-typer-targets]').typer();
     });
   </script>
 </body>
-<style type="text/css">
-  h2{
-    font-family: 'Roboto', sans-serif;
-  }
-</style>
 </html>
