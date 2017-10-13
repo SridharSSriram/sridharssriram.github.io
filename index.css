@@ -6,9 +6,6 @@
 
   /* Monitors */
   /* Inner Grid */
-  .text {
-    grid-area: text;
-  }
 
   #hello {
     grid-area: opt1;
