@@ -22,6 +22,11 @@
   .causes {
     grid-area: causes;
   }
+
+  .names:hover{
+    background-color: red;
+    transition-duration: 2s;
+  }
   @media only screen and (min-width: 100px) {
     .wrapper{
       display: grid;
