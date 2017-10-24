@@ -7,62 +7,79 @@
   /* Monitors */
   /* Inner Grid */
 
-  .hello {
-    grid-area: opt1;
-    border: 2px solid red;
-    padding:100px;
+  .header {
+    grid-area: header;
+  }
+  .thangs {
+    grid-area: thangs;
+  }
+  .footer {
+    grid-area: footer;
   }
   .names {
-    grid-area: opt2;
-    border: 2px solid red;
-    padding:0px;
+    grid-area: names;
   }
   .causes {
-    grid-area: opt3;
-    border: 2px solid red;
-    padding:0px;
+    grid-area: causes;
   }
-}
-  @media screen and (min-width: 1400px) {
+  @media only screen and (min-width: 100px) {
     .wrapper{
       display: grid;
       grid-gap: 10px;
-      grid-template-columns: 5fr 1fr 1fr;
-      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
       grid-template-areas:
-        "opt1 opt2 opt3";
+        "header"
+        "thangs"
+        "names"
+        "causes"
+        "footer";
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    .wrapper{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header header"
+        "names causes"
+        "thangs thangs"
+        "footer footer";
     }
   }
 
     /* Outer Grid mobile */
 
   /* Outer Grid computer */
-  @media screen and (min-width: 1000px) {
-    .wrapper {
-      display: in-line grid;
-      grid-gap: 10px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas:
-        "opt1 opt2"
-        "opt3";
-       overflow: visible;
-    }
-
-  }
-
-
-  /* Outer Grid computer */
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 1200px) {
     .wrapper {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: auto;
       grid-template-areas:
-        "opt1"
-        "opt2"
-        "opt3";
-       overflow: visible;
+        "header header header"
+        "thangs names causes"
+        "footer footer footer";
     }
+
   }
+  .header,.footer {
+    background-color: #999;
+    color: white;
+  }
+
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%; 
+  }
+
+
+
+}
