@@ -7,24 +7,24 @@
   /* Monitors */
   /* Inner Grid */
 
-  #hello {
+  .hello {
     grid-area: opt1;
     border: 2px solid red;
     padding:100px;
   }
-  #names {
+  .names {
     grid-area: opt2;
     border: 2px solid red;
     padding:0px;
   }
-  #causes {
+  .causes {
     grid-area: opt3;
     border: 2px solid red;
     padding:0px;
   }
 }
   @media screen and (min-width: 1400px) {
-    body{
+    .wrapper{
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 5fr 1fr 1fr;
@@ -38,7 +38,7 @@
 
   /* Outer Grid computer */
   @media screen and (min-width: 1000px) {
-    body {
+    .wrapper {
       display: in-line grid;
       grid-gap: 10px;
       grid-template-columns: 1fr 1fr 1fr;
@@ -54,7 +54,7 @@
 
   /* Outer Grid computer */
   @media screen and (min-width: 500px) {
-    body {
+    .wrapper {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 1fr 1fr 1fr;
@@ -66,4 +66,3 @@
        overflow: visible;
     }
   }
-}
