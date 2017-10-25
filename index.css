@@ -1,76 +1,27 @@
 @supports (display: grid) {
-  h1, h2{
-    font-family: 'Roboto', sans-serif;
+  h1, h2, p{
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue", 
+    sans-serif;
+  }
+  body{
+    margin:10px;
+    background-color: #FAFAFA;
   }
   /* title */
 
   /* Monitors */
   /* Inner Grid */
-
-  .header {
-    grid-area: header;
+  .fa{
+    text-decoration: none;
+    transition-duration: 1s;
+    color: black;
+    text-align: center;
   }
-  .thangs {
-    grid-area: thangs;
-  }
-  .footer {
-    grid-area: footer;
-  }
-  .names {
-    grid-area: names;
-  }
-  .causes {
-    grid-area: causes;
-  }
-
-  .names:hover{
-    background-color: red;
-    transition-duration: 2s;
-  }
-  @media only screen and (min-width: 100px) {
-    .wrapper{
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:
-        "header"
-        "thangs"
-        "names"
-        "causes"
-        "footer";
-    }
-  }
-
-  @media only screen and (min-width: 700px) {
-    .wrapper{
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:
-        "header header"
-        "names causes"
-        "thangs thangs"
-        "footer footer";
-    }
-  }
-
-    /* Outer Grid mobile */
-
-  /* Outer Grid computer */
-  @media screen and (min-width: 1200px) {
-    .wrapper {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:
-        "header header header"
-        "thangs names causes"
-        "footer footer footer";
-    }
-
+  .fa:hover{
+    color:#D8D8D8;
+    transition-duration: 1s;
   }
   .header,.footer {
     background-color: #999;
@@ -82,9 +33,261 @@
     color: #fff;
     border-radius: 5px;
     padding: 10px;
-    font-size: 150%; 
+    font-size: 150%;
+    transition-duration: 1.5s;
+  }
+  .header h1{
+    text-align: center;
+    vertical-align: middle;
+    font-weight: normal;
+  }
+  .header {
+    grid-area: header;
+    background-color: #FAFAFA;
+    color: #424242;
+    height: 100vh;
+  }
+  .test1{
+    grid-area: hello;
+    transition-timing-function: ease;
+    transition-duration: 1.5s;
+/*     border-radius: 50%; */
+  }
+  .test2{
+    grid-area: headshot;
+    background:url("https://lh6.googleusercontent.com/p_Jh198KlZ4v_JTHYEBBUuulCHY3L_0MlmvRhP-VnWlGTC7kBN9IQXYWzQiajtCK3JnOS9_-9ySR8j8=w2872-h1608-rw");
+    background-width: auto;
+    background-height: auto;
+/*     border-radius: 50%; */
+    width: 550px;
+    height: 600px;
+    transition-duration:1.5s;
+  }
+  .test2:hover{
+    filter:brightness(40%);
+    transition-duration:1.5s;
+  }
+  .test3{
+    grid-area: world;
+  }
+  .desc2{
+    grid-area: desc2;
+  }
+  .cause2{
+    grid-area: cause2;
+    text-align: center;
+  }
+  .desc3{
+    grid-area: desc3;
+  }
+  .cause3 {
+    grid-area: cause3;
+    text-align: center;
+  }
+  .linkedin{
+    grid-area: li;
+    text-align: center;
+  }
+  .facebook{
+    grid-area: fb;
+    text-align: center;
+  }
+  .insta{
+    grid-area: ig;
+    text-align: center;
+  }
+  .github{
+    grid-area: gh;
+    text-align: center;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  .cause1 {
+    grid-area: cause1;
+    text-align: center;
+  }
+  .description1 {
+    grid-area: description1;
+  
+  }
+  .email{
+    grid-area: email;
+    text-align: center;
+  }
+  .bookshelf{
+    grid-area: book;
+  }
+  .book1{
+    grid-area: book1;
+    
+  }
+  #book1{
+    object-fit: cover;
+  }
+  .book2{
+    grid-area: book2;
+    background-color: red;
+  }
+  .book3{
+    grid-area: book3;
+    background-color: blue;
+  }
+  
+  @media only screen and (min-width: 100px) {
+    .test2{
+      width: 150px;
+      height: 200px;
+    }
+    .header {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "hello"
+        "headshot"
+        "world";
+    }
+    .footer {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "li"
+        "gh"
+        "fb"
+        "ig"
+        "email";
+    
+    }
+    .bookshelf{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      height: 15vh;
+      grid-template-areas:
+        "book1"
+        "book2"
+        "book3";
+    }
+    .wrapper{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header"
+        "cause1"
+        "description1" 
+        "cause2"
+        "desc2"
+        "cause3"
+        "desc3"
+        "book"
+        "footer";
+    }
   }
 
+  @media only screen and (min-width: 700px) {
+    .test2{
+      width: 350px;
+      height: 400px;
+    }
+    .header {
+      background-color: black;
+      display:grid;
+      height: 100vh;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "hello headshot"
+        "hello headshot"
+        "world world";
+    }
+     .footer {
+      display:grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "li gh email"
+        "fb ig email";
+    }
+    .bookshelf{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "book1 book2 book3"
+    }
+    
+    .wrapper{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header header"
+        "cause1 description1"
+        "desc2 cause2"
+        "cause3 desc3"
+        "book book"
+        "footer footer";
+    }
+  }
 
+    /* Outer Grid mobile */
 
-}
+  /* Outer Grid computer */
+  @media only screen and (min-width: 1000px) {
+    .test2{
+      border-radius: 50%;
+      width: 550px;
+      height: 600px;
+    }
+    .header {
+      display: grid;
+      background-color: #FAFAFA;
+      color: #424242;
+      height: 100vh;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "hello hello headshot"
+        "hello hello headshot"
+        "world world headshot";
+    } 
+    .footer{
+      display:grid;
+      color: white;
+      grid-gap: 10px;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "li gh fb ig email";
+    }
+    .bookshelf{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "book1 book2 book3";
+    }
+    .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header header header"
+        "description1 description1 cause1"
+        "cause2 desc2 desc2"
+        "desc3 desc3 cause3"
+        "book book book"
+        "footer footer footer";
+    }
+
+  }
+
