@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-header {
-  height: 70vh;
+  height: 100vh;
   width: 100vw;
   position: relative;
   content: 'viewport-units-buggyfill; height:100vh; width: 100vw';
@@ -282,12 +282,12 @@ h1, h2, h3, h4, h5, h6 {
     /*height: auto !important;*/
     padding: 3em 0;
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     content: 'viewport-units-buggyfill; width: 100vw';
   }
 }
 #fh5co-header .fh5co-text-wrap {
-  height: 70vh;
+  height: 100vh;
   width: 100vw;
   content: 'viewport-units-buggyfill; height:100vh; width: 100vw';
   display: table-cell;
@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-header .fh5co-text-wrap {
     height: auto !important;
     padding: 3em 0;
-    height: 70vh;
+    height: 100vh;
     width: 100vw;
     content: 'viewport-units-buggyfill; height:100vh; width: 100vw';
   }
@@ -800,11 +800,13 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-list-style-1.fh5co-inline {
   float: left;
   margin-right: 3em;
+  color: black;
 }
 @media screen and (max-width: 480px) {
   .fh5co-list-style-1.fh5co-inline {
     margin-right: 0px;
     float: none;
+    color: black;
   }
 }
 .fh5co-list-style-1 li {
@@ -823,8 +825,8 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  background: #ffab00;
+  background: black;
+  background: black;
 }
 
 .flexslider {
@@ -1006,8 +1008,5 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
 }
 
-#datanotthatdeep{
-  border-radius: 50%;
-}
 
 /*# sourceMappingURL=style.css.map */
