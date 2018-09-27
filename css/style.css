@@ -494,7 +494,6 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-project .fh5co-imgs {
   height: calc(100% - 50%);
   position: relative;
-  
 }
 @media screen and (max-width: 768px) {
   .fh5co-project .fh5co-imgs {
@@ -538,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .fh5co-project .fh5co-imgs .img-holder-1 {
     right: 0;
-  
+  }
 }
 .fh5co-project .fh5co-imgs .img-holder-2 {
   bottom: -2em;
@@ -553,7 +552,6 @@ h1, h2, h3, h4, h5, h6 {
   .fh5co-project .fh5co-imgs .img-holder-2 {
     right: 30px;
     bottom: -1em;
-
   }
   .fh5co-project .fh5co-imgs .img-holder-2 img {
     -webkit-transition: 0.5s;
