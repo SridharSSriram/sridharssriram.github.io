@@ -351,6 +351,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     letter-spacing: 2px;
   }
+  
+}
+@media screen and (max-width: 320px) {
+  #headshot{
+    margin-left:-10.5%;
+  }
+  
 }
 #fh5co-header span {
   margin: 0;
@@ -370,6 +377,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 30px;
   }
+    
 }
 
 .btn-next {
@@ -381,6 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   .btn-next {
     bottom: 4px;
   }
+
 }
 .btn-next a {
   display: block;
@@ -1007,6 +1016,10 @@ h1, h2, h3, h4, h5, h6 {
 .js .animate-box {
   opacity: 0;
 }
-
+@media screen and (max-width: 768px) {
+  .animate-box {
+    margin-left:auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
