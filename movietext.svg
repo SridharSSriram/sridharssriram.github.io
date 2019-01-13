@@ -1,0 +1,18 @@
+<svg width="398px" height="80px" viewBox="0 0 398 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="peace-sign-click" transform="translate(-540.000000, -340.000000)">
+            <g id="Group-2" transform="translate(539.000000, 335.000000)">
+                <g id="I-acted-in-a-movie-t-2" fill="#FFFFFF" font-family="SFUIText-Regular, SF UI Text" font-size="25" font-weight="normal">
+                    <text id="i-acted-in-a-movie-t">
+                        <tspan x="0" y="24">i acted in a </tspan>
+                        <tspan x="135.473633" y="24" font-family="SFUIText-Semibold, SF UI Text" font-weight="500">movie</tspan>
+                        <tspan x="208.581543" y="24"> that’s being </tspan>
+                        <tspan x="0" y="54">screened at the 2019 Cannes Film </tspan>
+                        <tspan x="0" y="84">Festival</tspan>
+                    </text>
+                </g>
+                <path d="M136.5,21.5 L136.5,27.5 L212.5,27.5 L212.5,21.5 L136.5,21.5 Z" id="Rectangle" stroke="#979797" fill="#99A9E0" opacity="0.712844122"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Portrait" transform="translate(-126.000000, -6.000000)" stroke="#979797">
+            <g id="menu" transform="translate(113.000000, 0.000000)">
+                <g id="exit-button-menu" transform="translate(14.000000, 7.000000)">
+                    <ellipse id="Oval" cx="17" cy="17.5" rx="15" ry="15.5"></ellipse>
+                    <ellipse id="Oval" cx="19" cy="15.5" rx="15" ry="15.5"></ellipse>
+                    <ellipse id="Oval" cx="15" cy="15.5" rx="15" ry="15.5"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

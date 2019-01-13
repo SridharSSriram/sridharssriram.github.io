@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" src="images/favicon.ico">
+
+    <meta property="og:title" content="Hersh Patel" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.hershpatel.com/" />
+    <meta property="og:image:width" content="100"/>
+    <meta property="og:image:height" content="100"/>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Sridhar S. Sriram</title>
+</head>
+    
+<body style="background-color: #2A2727;">
+    <!-- NAV BAR TINGS: DO NOT TOUCH EXCEPT FOR ACTIVE CLASSES FOR BUTTONS -->
+    <center>   
+        <nav class = "navHead">
+            <a href ="index.html"><div class = "animated fadeInUp nav_peace"><img src = "peace.svg"></div></a>
+            <a href ="index.html"><div class = "animated fadeInUp nav_code"><img src = "code.svg"></div></a>
+            <a href ="index.html"><div class = "animated fadeInUp nav_pencil"><img src = "pencil-edit-button.svg"></div></a>
+        </nav>
+    </center>
+    <div id="mySidenav" class="sidenav" font-family="SFCompactDisplay-Ultralight, SF Compact Display">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <div>
+            <img src = "closebtn.svg">
+        </div>
+      </a>
+      <br>
+      <br>
+      <a href="#">me!</a>
+      <br>
+      <br>
+      <a href="#">technical projects</a>
+      <br>
+      <br>
+      <a href="#">writing endeavors</a>
+    </div>
+    <span id = "triggerMenu" onclick="openNav()"><object class = "animated fadeInUp" style="pointer-events: none" data="peace.svg" type="image/svg+xml"></object></span>
+    <center><p style="color:white;">currently a cs & policy student @ rutgers university with a focus in data science & algorithmic bias</p></center>
+
+</body>  
+<script>
+    let sideNav = document.getElementById("mySidenav");
+    let header = document.getElementById("navbar");
+    
+    function openNav() {
+      sideNav.style.width = "250px";
+      sideNav.style.border.left = "10px solid #99A9E0";
+
+
+    }
+
+    function closeNav() {
+      sideNav.style.width = "0";
+      sideNav.style.border = "0";
+    }
+</script>
+            
+</html>

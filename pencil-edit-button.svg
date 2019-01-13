@@ -1,0 +1,23 @@
+
+<svg width="54px" height="51px" viewBox="0 0 54 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M33.5785337,8.51124297 L44.5633553,18.9365072 L16.7577386,45.3259753 L5.77914509,34.900711 L33.5785337,8.51124297 Z M52.8987101,5.99690825 C54.3670966,7.39050937 54.3670966,9.6379843 52.8987101,11.0316823 L47.4250856,16.2265335 L36.440264,5.80117231 L41.1328319,1.34759833 C43.0324842,-0.449199443 46.1066824,-0.449199443 47.9999024,1.34759833 L52.8987101,5.99690825 Z M0.0305681665,49.5542591 L2.8049018,37.723572 L13.7834953,48.1488363 L1.5427551,50.9655927 C0.642957418,51.1732473 -0.169341496,50.4081329 0.0305681665,49.5542591 Z" id="path-1"></path>
+        <filter x="-0.5%" y="-0.5%" width="100.9%" height="101.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-landing-page-copy" transform="translate(-709.000000, -51.000000)">
+            <g id="Group" transform="translate(541.000000, 51.000000)">
+                <g id="policy-&amp;-writing" transform="translate(168.000000, 0.000000)">
+                    <g id="Shape">
+                        <use fill-opacity="0.9" fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
