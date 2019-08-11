@@ -1,73 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+<head>
 
-<head profile="http://www.w3.org/2005/10/profile">
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>about</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" src="images/favicon.ico">
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700" rel="stylesheet">
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <title>Sridhar S. Sriram</title>
 </head>
+
+<body id="top" style="height:100vh; width:100vw;">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>hop around</h3>
+                
+                <ul class="header-nav__list">
+                    <li><a href="index.html" title="home">home</a></li>
+                    <li><a id="sidenav-current" href="#" title="about">about</a></li>
+                    <li><a href="work.html" title="services">work</a></li>
+                    <li><a href="random.html" title="works">random</a></li>
+                </ul>
     
-<body style="background-color: #2A2727;">
-    <!-- NAV BAR TINGS: DO NOT TOUCH EXCEPT FOR ACTIVE CLASSES FOR BUTTONS -->
-    <center>   
-        <nav class = "navHead">
-            <a href ="index.html"><div class = "animated fadeInUp nav_peace"><img src = "peace.svg"></div></a>
-            <a href ="index.html"><div class = "animated fadeInUp nav_code"><img src = "code.svg"></div></a>
-            <a href ="index.html"><div class = "animated fadeInUp nav_pencil"><img src = "pencil-edit-button.svg"></div></a>
-        </nav>
-    </center>
-    <div id="mySidenav" class="sidenav" font-family="SFCompactDisplay-Ultralight, SF Compact Display">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-        <div>
-            <img src = "closebtn.svg">
+                <ul class="header-nav__social sidenav-grid">
+                    <li  id="side-insta">
+                        <a href="https://instagram.com/sreeedarr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li id="side-med">
+                        <a href="https://medium.com/@sridharssriram" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </li>
+                    <li id="side-linkedin">
+                        <a href="https://linkedin.com/in/sridhar-s-sriram"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li id="side-mail">
+                        <a href="mailto:sridhar.s.sriram@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+        <a class="header-menu-toggle" href="#0"><span id="navbarpeace">✌🏽</span></a>
+
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+                <dl>
+                    <a href="#"><img width="250" height="250" class="pull-right" alt="sample-image" src="images/whitney.JPG"></a>
+                    <dt><strong>currently</strong></dt>
+                        <dd>eating & <mark> <a style="text-decoration:none; color:black;" href="https://www.gatescambridge.org/members-area/connect/directory/scholar/16342" target="_blank">gates scholar @ cambridge</a></mark> studying <br>tech policy</dd>
+                    <br>
+                    <dt><strong>east coast roots</strong></dt>
+                        <dd>from growing up in central jersey to <mark> <a style="text-decoration:none; color:black;" href="https://newbrunswick.rutgers.edu/" target="_blank">@rutgers</a></mark>,</dd>
+                        <dd>my heart & soul can be found on the east coast</dd>
+                    <br>
+                    <dt><strong>my happy place</strong></dt>
+                        <dd>is brunch with the <mark><a style="text-decoration: none;color:black" href="https://open.spotify.com/playlist/37i9dQZF1DWWBHeXOYZf74" target="_blank">pollen playlist</a></mark> in the back-
+                            <br>ground or around the dinner table with my fam</dd>
+                </dl>
+            </div> <!-- end home-content__main -->
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li><a href="https://instagram.com/sreeedarr" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span class="home-social-text">instagram</span>
+            </a></li>
+            <li><a href="https://medium.com/@sridharssriram" target="_blank">
+                <i class="fab fa-medium-m"></i>
+                <span class="home-social-text">medium</span>
+            </a></li>
+            <li><a href="https://linkedin.com/in/sridhar-s-sriram" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span class="home-social-text">linkedin</span>
+            </a></li>
+            <li><a href="mailto:sridharssriram@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+                <span class="home-social-text">email</span>
+            </a></li>
+        </ul> <!-- end home-social -->
+    </section> <!-- end s-home -->
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">            
         </div>
-      </a>
-      <br>
-      <br>
-      <a href="#">me!</a>
-      <br>
-      <br>
-      <a href="#">technical projects</a>
-      <br>
-      <br>
-      <a href="#">writing endeavors</a>
     </div>
-    <span id = "triggerMenu" onclick="openNav()"><object class = "animated fadeInUp" style="pointer-events: none" data="peace.svg" type="image/svg+xml"></object></span>
-    <center><p style="color:white;">currently a cs & policy student @ rutgers university with a focus in data science & algorithmic bias</p></center>
-
-</body>  
-<script>
-    let sideNav = document.getElementById("mySidenav");
-    let header = document.getElementById("navbar");
-    
-    function openNav() {
-      sideNav.style.width = "250px";
-      sideNav.style.border.left = "10px solid #99A9E0";
 
 
-    }
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-    function closeNav() {
-      sideNav.style.width = "0";
-      sideNav.style.border = "0";
-    }
-</script>
-            
+</body>
+
 </html>
