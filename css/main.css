@@ -1329,12 +1329,30 @@ input::-moz-focus-inner {
   grid-area:big;
 }
 
-.page-text-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "small_text small_text big";
+#about-image{
+  grid-area: headshot;
 }
+
+#about-curr{
+	grid-area: curr;
+}
+
+#about-east-coast{
+	grid-area: east;
+}
+
+#about-happy{
+	grid-area: happy;
+}
+
+.about-container{
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-areas: 
+ 		"curr headshot"
+ 		"east headshot"
+ 		"happy headshot";
+  }
 
 @media only screen and (max-width: 500px) {
   .page-text-container{
@@ -1347,6 +1365,15 @@ input::-moz-focus-inner {
 
   .page-big-text{
     top:-50%;
+  }
+  .about-container{
+  	display: grid;
+  	grid-template-columns: 1fr;
+  	grid-template-areas: 
+ 		"headshot"
+ 		"curr"
+ 		"east"
+ 		"happy";
   }
 }
 
@@ -1441,9 +1468,7 @@ input::-moz-focus-inner {
   top: 0;
   right: 100%;
 }
-.header-menu-toggle.opaque {
-  background-color: #000000;
-}
+
 .header-menu-toggle.opaque::before {
   display: none;
 }
