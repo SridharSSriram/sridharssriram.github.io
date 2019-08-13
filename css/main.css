@@ -1357,6 +1357,7 @@ input::-moz-focus-inner {
  		"happy headshot";
   }
 
+
 @media only screen and (max-width: 500px) {
   .page-text-container{
     display: grid;
@@ -1384,6 +1385,24 @@ input::-moz-focus-inner {
  		"curr"
  		"east"
  		"happy";
+    margin-bottom: 0;
+  }
+
+  #about-image{
+    /*margin: 1.5rem 8rem 0 20rem;*/
+    display:block;
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    /*margin: auto;*/
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+  }
+
+  #about-content{
+    margin-top:220px;
   }
 
 }
@@ -1609,6 +1628,7 @@ input::-moz-focus-inner {
   /*background-color: transparent;*/
   position: relative;
   display: table;
+  margin-bottom: 0;
 }
 .s-home .shadow-overlay {
   position: absolute;
