@@ -31,7 +31,7 @@
 
 </head>
 
-<body id="top" style="height:100vh; width:100vw;">
+<body id="top" style="height:100vh; width:100vw;" >
 
     <!-- header
     ================================================== -->
@@ -46,7 +46,6 @@
                 
                 <ul class="header-nav__list">
                     <li><a id="sidenav-current" href="#" title="home">home</a></li>
-                    <li><a href="about.html" title="about">about</a></li>
                     <li><a href="work.html" title="work">work</a></li>
                     <li><a href="random.html" title="random stuff">random</a></li>
                 </ul>
@@ -80,8 +79,6 @@
     ================================================== -->
     <section id="home" class="s-home target-section">
 
-        <div class="shadow-overlay"></div>
-
         <div class="home-content">
 
             <div class="row home-content__main">
@@ -114,7 +111,57 @@
                 <span class="home-social-text">email</span>
             </a></li>
         </ul> <!-- end home-social -->
+
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__icon"></span>
+        </a> <!-- end home-scroll -->
     </section> <!-- end s-home -->
+
+     <section id='about' class="s-home about-container">
+
+       <!--  <div class="row"> -->
+
+        <div class="home-content col-full" data-aos="fade-up">
+
+            <div class="row home-content__main">
+                <dl>
+                    <img id="about-image" width="250" height="250" class="pull-right" alt="sample-image" src="images/whitney.JPG">
+                    <dt><strong>currently</strong></dt>
+                        <dd id = "about-curr">eating & <mark> <a style="text-decoration:none; color:black;" href="https://www.gatescambridge.org/members-area/connect/directory/scholar/16342" target="_blank">gates scholar @ cambridge</a></mark> studying <br>tech policy</dd>
+                    <br>
+                    <dt><strong>east coast roots</strong></dt>
+                        <dd id = "about-east-coast">from growing up in central jersey to <mark> <a style="text-decoration:none; color:black;" href="https://newbrunswick.rutgers.edu/" target="_blank">@rutgers</a></mark>,</dd>
+                        <dd>my heart & soul can be found on the east coast</dd>
+                    <br>
+                    <dt><strong>my happy place</strong></dt>
+                        <dd id = "about-happy">is brunch with loved ones or anywhere with the <br><mark><a style="text-decoration: none;color:black" href="https://open.spotify.com/playlist/37i9dQZF1DWWBHeXOYZf74" target="_blank">pollen playlist</a></mark> in the background</dd>
+                </dl>
+            </div> <!-- end home-content__main -->
+
+        </div> <!-- end home-content -->
+
+        <!-- </div>  -->
+        <!-- end section-header -->
+         <ul class="home-social">
+            <li><a href="https://instagram.com/sreeedarr" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span class="home-social-text">instagram</span>
+            </a></li>
+            <li><a href="https://medium.com/@sridharssriram" target="_blank">
+                <i class="fab fa-medium-m"></i>
+                <span class="home-social-text">medium</span>
+            </a></li>
+            <li><a href="https://linkedin.com/in/sridhar-s-sriram" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span class="home-social-text">linkedin</span>
+            </a></li>
+            <li><a href="mailto:sridharssriram@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+                <span class="home-social-text">email</span>
+            </a></li>
+        </ul> <!-- end home-social -->
+    </section> <!-- end s-about -->
+
 
     <!-- preloader
     ================================================== -->
@@ -131,5 +178,6 @@
     <script src="js/main.js"></script>
 
 </body>
+
 
 </html>
